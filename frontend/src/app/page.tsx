@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./page.module.css";
 import React, { useState } from "react";
@@ -11,7 +13,8 @@ export default function Home() {
     event.preventDefault();
 
     try {
-      const response = await fetch("todo https://endpoint/login", {
+      // TODO update endpoint url
+      const response = await fetch("https://endpoint/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
